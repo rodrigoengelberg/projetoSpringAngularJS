@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:lang="${#locale.language}">
+    <head>
+        <title th:text="#{email.accountactivation.title}">[JBeatnik] Account activation</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <p th:text="#{email.greeting} + ' ' + ${usuario.username}"></p>
+        <p th:text="#{email.accountactivation.line1}"></p>
+        <p>
+            <a th:href="@{|${baseUrl}/#/activate?email=${usuario.email}&amp;key=${usuario.activationKey}|}"
+               th:text="|${baseUrl}/#/activate?email=${usuario.email}&amp;key=${usuario.activationKey}|">Activation link</a>
+        </p>
+
+        <p th:text="#{email.footer}"></p>
+
+    </body>
+</html>

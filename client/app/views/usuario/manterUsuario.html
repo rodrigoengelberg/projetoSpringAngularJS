@@ -1,0 +1,23 @@
+<div role="document">
+    <form name="form" ng-submit="cadastrar(usuario)">
+        <div class="row">
+            <label>Usuario</label>
+        </div>
+        <div class="row">
+            <label>Nome: </label><br/>
+            <input type="text" class="form-control" ng-model="anoAgricola.periodoFim" required/>
+
+            <label>Idade: </label><br/>
+            <input type="number" ng-model="usuario.idade" required>
+
+            <label>Telefone (formato: xx-xxxx-xxxx):</label><br/>
+            <input type="tel" pattern="^\d{2}-\d{4}-\d{4}$" ng-model="usuario.telefone" required>
+
+            <label>Email: </label><br/>
+            <input type="email" ng-model="usuario.email" required>
+
+            <button type="submit" value="Salvar"></button>
+
+        </div>
+    </form>
+</div>

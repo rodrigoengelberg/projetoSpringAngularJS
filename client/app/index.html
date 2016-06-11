@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <title>Exemplo</title>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+<body ng-app="app">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <h3 class="panel-title">About</h3>
+                </div>
+                <div class="panel-body">
+                    A seed frontend package structure built with yeoman. Used angular-generator to create it.
+                    <br>                    
+                    A simple login module has been added. On click of login button on the right of the window.
+                    <br>
+                    A login popup will appear.Enter the below credential.
+                    <br>
+                    <code>
+                        &nbsp;Username : admin@gmail.com<br>
+                        &nbsp;Password : admin
+                    </code>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <button type="button" class="btn btn-success" id="submit" ng-click="openLogin()">Test Drive</button>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!--[if lt IE 9]>
+<script src="bower_components/es5-shim/es5-shim.js"></script>
+<script src="bower_components/json3/lib/json3.min.js"></script>
+<![endif]-->
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular-strap/dist/angular-strap.min.js"></script>
+<script src="bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
+<script src="bower_components/angular-mocks/angular-mocks.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/security/http-auth-interceptor.js"></script>
+<script src="scripts/security/authorization.js"></script>
+<script src="scripts/app.js"></script>
+<!-- endbuild -->
+</body>
+</html>
